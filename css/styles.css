@@ -1,0 +1,810 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+    padding-bottom: 2rem;
+}
+
+/* Grid areas */
+
+#nav {
+    grid-area: nav;
+}
+
+#header {
+    grid-area: header;
+}
+
+#main {
+    grid-area: main;
+}
+
+#newsletter {
+    grid-area: newsletter;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+#rec1 {
+    grid-area: rec1;
+}
+
+#rec2 {
+    grid-area: rec2;
+}
+
+#rec3 {
+    grid-area: rec3;
+}
+
+
+/* Contenedores Grid */
+
+.index__grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "newsletter"
+        "footer";
+}
+
+.container__grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+}
+
+.practice-areas__grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: auto;
+    justify-items: center;
+}
+
+.form__grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: auto;
+    row-gap: 1rem;
+    justify-items: center;
+}
+
+/* navegación */
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    padding: 15px;
+    z-index: 100;
+}
+
+.nav__logo {
+    display: block;
+    width: 250px;
+    margin-right: 20px;
+}
+
+.nav__logo img {
+    width: 100%;
+}
+
+.nav__li {
+    margin: 10px 0;
+}
+
+.nav__links {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Cabeceras */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 230px);
+    min-height: 27rem;
+    overflow: hidden;
+}
+
+.header--margin {
+    margin-bottom: 6rem;
+    min-height: 42rem;
+}
+
+.header__title {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    text-transform: uppercase;
+    opacity: 0.9;
+    padding: 0 3rem;
+    z-index: 5;
+}
+
+.header__title--bottom {
+    margin-top: 35rem;
+}
+
+.header__photo {
+    height: 100%;
+    min-height: 40rem;
+}
+
+.header__foto--left {
+    position: relative;
+    left: 50rem;
+}
+
+/* Contenidos principales */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+/* Información de la empresa */
+
+.overview {
+    background-color: #fd5000;
+    position: relative;
+    top: -70px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-bottom: 5px black solid;
+    padding: 1rem 2rem 4rem 2rem;
+}
+
+.overview__title {
+    margin-bottom: 2rem;
+}
+
+/* Noticias */
+
+.news {
+    display: flex;
+    flex-direction: column;
+    min-width: 25rem;
+}
+
+.news__header {
+    text-align: center;
+}
+
+.news__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.news__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    max-width: 40rem;
+}
+
+.news__title {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: relative;
+    top: 5rem;
+    height: 5rem;
+    color: white;
+    text-transform: uppercase;
+    margin-top: -6rem;
+}
+
+.news__picture {
+    width: 100%;
+    box-shadow: 0 0 2px black;
+    border-bottom: 1px solid black;
+}
+
+.news__text {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+/* Quienes somos */
+
+.who-we-are p {
+    font-size: 15px;
+    margin: 2rem 1.5rem;
+}
+
+/* Áreas de práctica */
+
+.practice-areas h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.practice-areas a {
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgba(214, 215, 216, 0.5);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Política de calidad */
+
+.quality {
+    margin: 0 15px;
+}
+
+.quality h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.quality__flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.quality__flex a img {
+    width: 5rem;
+    opacity: 0.5;
+}
+
+/* Recomendaciones */
+
+.findings__list {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.findings__list li {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.findings__list p {
+    position: relative;
+    top: -40rem;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+/* Trabaja con nosotros */
+
+.work-with-us {
+    margin-top: 2rem;
+}
+
+/* Formulario de trabajo */
+
+.form {
+    margin-bottom: 5rem;
+}
+
+.form h2 {
+    text-align: center;
+    margin: 3rem 0 4rem 0;
+}
+
+.form input,
+.form select,
+.form textarea {
+    background-color: white;
+    height: 5rem;
+    width: 90%;
+    border: #bebebe 1px solid;
+    border-radius: 8px;
+    padding-left: 2rem;
+}
+
+.form div input {
+    padding: 0;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+    background-color: #fd5000;
+    margin-top: 1rem;
+}
+
+.form textarea {
+    height: auto;
+    padding-top: 1rem;
+}
+
+/* Reconocimientos internacionales */
+
+.recon {
+    margin: 10rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recon__title {
+    margin-bottom: 5rem;
+}
+
+.recon__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30rem;
+}
+
+.recon li {
+    padding: 1rem;
+}
+
+/* Newsletter */
+
+.newsletter {
+    background-color: #fd5000;
+    padding: 1.5rem 0;
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+.newsletter__title {
+    font-size: 15px;
+    color: white;
+}
+
+/* Contacto */
+
+.branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -8rem;
+}
+
+.branch li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.branch h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.branch img {
+    width: 230px;
+    box-shadow: 0 2px 1px rgb(104, 104, 104);
+    margin-bottom: 1rem;
+}
+
+/* Formulario de contacto */
+
+#submit {
+    padding: 0;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+    background-color: #fd5000;
+    margin-top: 1rem;
+    width: 20rem;
+}
+
+/* Pie de página */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    padding-top: 1rem;
+    color: white;
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+    margin: 0 1rem;
+}
+
+.footer__logo {
+    width: 200px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.footer__logo img {
+    position: relative;
+    left: -3rem;
+    width: 22rem;
+}
+
+.footer__social {
+    margin-left: 3rem;
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+
+.footer__social img {
+    width: 20px;
+    padding: 1px;
+}
+
+.footer__addresses {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+
+.footer__addresses img {
+    width: 15px;
+    height: 15px;
+    margin-right: 1rem;
+}
+
+.footer__addresses h3 {
+    display: inline;
+}
+
+.footer__list {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.addresses__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+}
+
+.addresses__info p {
+    text-align: center;
+    font-size: 12px;
+    margin: -6px 0;
+}
+
+#la-paloma {
+    margin-left: 10rem;
+}
+
+.footer__copyR {
+    border-top: #fd5000 1px solid;
+    padding: 2rem 0;
+    text-align: center;
+    width: 50%;
+}
+
+/* Checkpoint 1 */
+
+@media (min-width: 480px) {
+
+    /* Navegación */
+
+    .nav {
+        flex-direction: row;
+    }
+
+    .header {
+        height: calc(100vh - 130px);
+    }
+}
+
+/* Checkpoint 2 */
+
+@media (min-width: 740px) {
+
+    /* Contenedores Grid */
+
+    .index__grid {
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nav nav nav"
+            "header header header"
+            ". main ."
+            "newsletter newsletter newsletter"
+            "footer footer footer";
+    }
+
+    .container__grid {
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nav nav nav"
+            "header header header"
+            ". main ."
+            "footer footer footer";
+    }
+
+    .findings__grid {
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            "rec1 rec2"
+            "rec3 rec3";
+    }
+
+    .practice-areas__grid {
+        grid-template-columns: 50% 50%;
+        column-gap: 1rem;
+    }
+
+    .form__grid {
+        grid-template-columns: 50% 50%;
+    }
+
+    /* Navegacion */
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__li {
+        padding: 0 1rem;
+    }
+
+    /* Cabeceras */
+
+    .header {
+        height: calc(100vh - 8.5rem);
+    }
+
+    .header--ajust {
+        align-items: flex-start;
+        height: 44rem;
+        margin-bottom: 2rem;
+    }
+
+    .header__photo {
+        width: 1920px;
+        height: auto;
+    }
+
+    .header__foto--left {
+        position: static;
+    }
+
+    /* Noticias */
+
+    .news__header {
+        text-align: left;
+        margin-bottom: 5rem;
+    }
+
+    .news__list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .news__container {
+        width: 30%;
+        height: 35rem;
+        margin-bottom: 10rem;
+    }
+
+    /* Contacto */
+
+    .branch {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: -5rem;
+    }
+
+    .branch li {
+        margin: 0 20px;
+    }
+
+    /* Recomendaciones */
+
+    .findings__list {
+        width: 100%;
+        position: static;
+    }
+
+    .findings__list li {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .findings__list p {
+        position: relative;
+        top: -40rem;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+    }
+
+    /* Reconocimientos internacionales */
+
+    .recon {
+        text-align: left;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .recon__list {
+        width: 40rem;
+        min-width: 40rem;
+    }
+
+    .recon li {
+        padding: 1rem 3rem;
+    }
+
+    /* Pie de página */
+
+    .footer__container {
+        width: 100%;
+    }
+
+    .footer__logo img {
+        position: static;
+        width: 30rem;
+    }
+
+    .footer__social {
+        width: 30rem;
+        text-align: center;
+    }
+
+    .footer__social img {
+        margin: 1rem 0.3rem;
+    }
+
+    .footer__addresses {
+        flex-direction: row;
+    }
+
+    .footer__addresses img {
+        margin: 0;
+    }
+
+    .footer__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 18rem;
+    }
+
+    .addresses__info {
+        margin: 0;
+    }
+
+    .addresses__info p {
+        margin: 0.5rem 0;
+    }
+
+    #la-paloma {
+        margin: 0;
+    }
+}
+
+/* Checkpoint 3 */
+
+@media (min-width: 1160px) {
+
+    /* Contenedores Grids */
+
+    .index__grid {
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    .container__grid {
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    .practice-areas__grid {
+        grid-template-columns: 50% 50%;
+        column-gap: 1rem;
+    }
+
+    /* Cabeceras */
+
+    .header__title--left {
+        width: 60%;
+        text-align: left;
+        padding: 0;
+    }
+
+    /* Quienes somos */
+
+    .who-we-are {
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+    }
+
+    .who-we-are p {
+        margin: 0;
+    }
+
+    /* Áreas de práctica */
+
+    .practice-areas h2 {
+        margin: 3rem 0;
+        text-align: left;
+    }
+
+    /* Políticas de calidad */
+
+    .quality h2 {
+        text-align: left;
+    }
+
+    /* Contacto */
+
+    .branch {
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    /* Pie de página */
+
+    .footer__container {
+        justify-content: space-around;
+    }
+}
