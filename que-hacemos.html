@@ -13,26 +13,35 @@
 </head>
 
 <body>
+    <!-- inicio contenedor grid -->
     <div class="container__grid">
         <!-- inicio navegación -->
-        <nav class="nav" id="nav">
-            <a class="nav__logo" href="./index.html">
-                <img src="./img/logo.jpg" alt="logo de brascesco & larrosa">
-            </a>
-            <ul class="nav__list">
-                <li class="nav__li">
-                    <a class="nav__links" href="./quienes-somos.html">Quiénes somos</a>
-                </li>
-                <li class="nav__li">
-                    <a class="nav__links" href="./que-hacemos.html">Qué hacemos</a>
-                </li>
-                <li class="nav__li">
-                    <a class="nav__links" href="./trabaja-con-nosotros.html">Trabajá con nosotros</a>
-                </li>
-                <li class="nav__li">
-                    <a class="nav__links" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="nav navbar navbar-expand-lg" id="nav">
+            <div class="container-fluid">
+                <a class="navbar-brand nav__logo" href="./index.html">
+                    <img src="./img/logo.jpg" alt="Logo de Brascesco y Larrosa">
+                </a>
+                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon nav__button"></span>
+                </button>
+                <div class="collapse navbar-collapse nav__ul" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav__links" href="./quienes-somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav__links" href="./que-hacemos.html">Qué hacemos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav__links" href="./trabaja-con-nosotros.html">Trabaja con nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav__links" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <!-- fin navegación -->
         <!-- header -->
@@ -162,6 +171,16 @@
         </footer>
         <!-- fin footer -->
     </div>
+    <!-- fin contenedor grid -->
+    <!-- inicio Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- fin Scripts -->
 </body>
 
 </html>
