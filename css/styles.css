@@ -19,15 +19,33 @@ li {
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+h1 {
+    font-weight: 700;
 }
 
 h2 {
     font-size: 20px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
 }
 
 p {
     font-size: 15px;
     padding-bottom: 2rem;
+}
+
+form {
+    font-size: 12px;
 }
 
 /* Grid areas */
@@ -110,14 +128,20 @@ p {
 /* navegación */
 
 .nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: white;
     position: sticky;
     top: 0px;
-    padding: 15px;
+    padding: 5px 15px 0 15px;
     z-index: 100;
+}
+
+.nav__ul {
+    justify-content: right;
+}
+
+.nav__button {
+    width: 4rem;
+    height: 4rem;
 }
 
 .nav__logo {
@@ -130,8 +154,9 @@ p {
     width: 100%;
 }
 
-.nav__li {
-    margin: 10px 0;
+.nav li {
+    margin: 10px 1rem;
+    text-align: center;
 }
 
 .nav__links {
@@ -139,6 +164,11 @@ p {
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.nav__links:hover {
+    transition: 0.1s;
+    color: #fd5000;
 }
 
 /* Cabeceras */
@@ -167,6 +197,9 @@ p {
     text-transform: uppercase;
     opacity: 0.9;
     padding: 0 3rem;
+    animation: header-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
     z-index: 5;
 }
 
@@ -184,6 +217,18 @@ p {
     left: 50rem;
 }
 
+/* Cabeceras Animaciones */
+
+@keyframes header-anim {
+
+    from {
+        opacity: 0;
+        transform: translateY(2em);
+    }
+
+    to {}
+}
+
 /* Contenidos principales */
 
 .main {
@@ -197,7 +242,7 @@ p {
 .overview {
     background-color: #fd5000;
     position: relative;
-    top: -70px;
+    top: -55px;
     color: white;
     text-align: center;
     line-height: 25px;
@@ -211,53 +256,13 @@ p {
 
 /* Noticias */
 
-.news {
-    display: flex;
-    flex-direction: column;
-    min-width: 25rem;
-}
-
-.news__header {
+.news h2 {
+    margin-bottom: 6rem;
     text-align: center;
 }
 
-.news__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.news__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem 0;
-    max-width: 40rem;
-}
-
-.news__title {
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    position: relative;
-    top: 5rem;
-    height: 5rem;
-    color: white;
-    text-transform: uppercase;
-    margin-top: -6rem;
-}
-
-.news__picture {
-    width: 100%;
-    box-shadow: 0 0 2px black;
-    border-bottom: 1px solid black;
-}
-
-.news__text {
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    position: relative;
-    color: white;
+.news small {
+    font-size: 12px;
 }
 
 /* Quienes somos */
@@ -282,6 +287,13 @@ p {
     text-align: center;
     background-color: rgba(214, 215, 216, 0.5);
     color: rgba(0, 0, 0, 0.8);
+}
+
+.practice-areas a:hover {
+    transition: color 0.5s, transform 0.2s;
+    color: white;
+    background-color: #fd5000;
+    transform: scale(1.05);
 }
 
 /* Política de calidad */
@@ -309,10 +321,15 @@ p {
 
 /* Recomendaciones */
 
-.findings__list {
-    display: flex;
-    width: 100%;
-    position: relative;
+.findings__grid {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 95%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "rec1"
+        "rec2"
+        "rec3";
 }
 
 .findings__list li {
@@ -332,7 +349,7 @@ p {
 /* Trabaja con nosotros */
 
 .work-with-us {
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 /* Formulario de trabajo */
@@ -370,6 +387,12 @@ p {
     padding-top: 1rem;
 }
 
+.form div input:hover {
+    transition: 0.2s;
+    transform: scale(1.3);
+    opacity: 1;
+}
+
 /* Reconocimientos internacionales */
 
 .recon {
@@ -399,14 +422,21 @@ p {
 
 .newsletter {
     background-color: #fd5000;
-    padding: 1.5rem 0;
-    line-height: 3.5rem;
+    padding: 3rem 0;
+    line-height: 4rem;
     text-align: center;
 }
 
 .newsletter__title {
     font-size: 15px;
     color: white;
+}
+
+.newsletter form input {
+    text-align: center;
+    font-weight: 700;
+    width: 25rem;
+    height: 3rem;
 }
 
 /* Contacto */
@@ -423,15 +453,19 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
-}
-
-.branch h3 {
-    font-size: 20px;
     margin-bottom: 1rem;
 }
 
+.branch h3 {
+    font-size: 30px;
+}
+
+.branch p {
+    padding: 0;
+}
+
 .branch img {
+    border: 1px solid black;
     width: 230px;
     box-shadow: 0 2px 1px rgb(104, 104, 104);
     margin-bottom: 1rem;
@@ -446,6 +480,12 @@ p {
     background-color: #fd5000;
     margin-top: 1rem;
     width: 20rem;
+}
+
+#submit:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 /* Pie de página */
@@ -539,11 +579,7 @@ p {
 
 @media (min-width: 480px) {
 
-    /* Navegación */
-
-    .nav {
-        flex-direction: row;
-    }
+    /* Cabecera */
 
     .header {
         height: calc(100vh - 130px);
@@ -578,7 +614,6 @@ p {
     }
 
     .findings__grid {
-        display: grid;
         gap: 0.5rem;
         grid-template-columns: 60% 40%;
         grid-template-rows: 50% 50%;
@@ -594,17 +629,6 @@ p {
 
     .form__grid {
         grid-template-columns: 50% 50%;
-    }
-
-    /* Navegacion */
-
-    .nav__list {
-        display: flex;
-        align-items: center;
-    }
-
-    .nav__li {
-        padding: 0 1rem;
     }
 
     /* Cabeceras */
@@ -630,20 +654,15 @@ p {
 
     /* Noticias */
 
-    .news__header {
+    .news h2 {
         text-align: left;
-        margin-bottom: 5rem;
     }
 
-    .news__list {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .news__container {
-        width: 30%;
-        height: 35rem;
-        margin-bottom: 10rem;
+    .news .card:hover {
+        transition: color 0.2s, transform 0.5s;
+        color: white;
+        background-color: #fd5000;
+        transform: scale(1.05);
     }
 
     /* Contacto */
@@ -714,6 +733,11 @@ p {
 
     .footer__social img {
         margin: 1rem 0.3rem;
+    }
+
+    .footer__social img:hover {
+        transition: 0.1s;
+        transform: scale(1.5);
     }
 
     .footer__addresses {
@@ -793,6 +817,12 @@ p {
 
     .quality h2 {
         text-align: left;
+    }
+
+    .quality div a:hover {
+        transition: 0.2s;
+        transform: scale(1.5);
+        opacity: 1;
     }
 
     /* Contacto */
