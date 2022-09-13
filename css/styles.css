@@ -120,6 +120,7 @@ form {
     top: 0px;
     padding: 5px 15px 0 15px;
     z-index: 100;
+    flex-wrap: nowrap;
 }
 
 .nav__ul {
@@ -133,7 +134,8 @@ form {
 
 .nav__logo {
     display: block;
-    width: 250px;
+    width: 220px;
+    min-width: 130px;
     margin-right: 20px;
 }
 
@@ -490,6 +492,8 @@ form {
 }
 
 .footer__social {
+    position: relative;
+    left: -1.6rem;
     margin-left: 3rem;
     margin-top: 2rem;
     line-height: 2rem;
@@ -498,13 +502,14 @@ form {
 .footer__social img {
     width: 20px;
     padding: 1px;
+    margin-left: 5px;
 }
 
 .footer__addresses {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 3rem;
+    margin: 3rem 0 3rem 0;
 }
 
 .footer__addresses img {
@@ -546,6 +551,16 @@ form {
 }
 
 /* Checkpoint 1 */
+
+@media (min-width: 400px) {
+
+    /* footer */
+
+    .footer__social {
+        left: 0;
+    }
+
+}
 
 @media (min-width: 480px) {
 
