@@ -1,0 +1,172 @@
+// Breakpoint 1
+
+@media (min-width: 341px) {
+
+    //nav
+    .nav__logo {
+        width: 220px;
+    }
+}
+
+// Breakpoint 2
+
+@media (min-width: 400px) {
+
+    //footer
+    .footer__social {
+        left: 0;
+    }
+}
+
+// Breakpoint 3
+
+@media (min-width: 480px) {
+
+    //header
+    .header {
+        height: calc(100vh - 130px);
+    }
+}
+
+// Breakpoin 4
+
+@media (min-width: 740px) {
+
+    // Contenedores grid
+
+    .index__grid {
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nav nav nav"
+            "header header header"
+            ". main ."
+            "newsletter newsletter newsletter"
+            "footer footer footer";
+    }
+
+    .container__grid {
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nav nav nav"
+            "header header header"
+            ". main ."
+            "footer footer footer";
+    }
+
+    .practice-areas__grid {
+        grid-template-columns: 50% 50%;
+        column-gap: 1rem;
+    }
+
+    .form__grid {
+        grid-template-columns: 50% 50%;
+    }
+
+    // headers
+
+    .header {
+        height: calc(100vh - 7rem);
+    }
+
+    .header--ajust {
+        align-items: flex-start;
+        height: 44rem;
+        margin-bottom: 2rem;
+    }
+
+    .header__photo {
+        width: 1920px;
+        height: auto;
+    }
+
+    .header__foto--left {
+        position: static;
+    }
+
+    // Noticias
+
+    .news {
+        h2 {
+            text-align: left;
+        }
+    }
+
+    .news .card {
+        &:hover {
+            transition: color 0.2s, transform 0.5s;
+            color: white;
+            background-color: #fd5000;
+            transform: scale(1.05);
+        }
+    }
+
+    // Reconocimientos internacionales
+
+    .recon {
+        @include flex (row, space-between, auto, auto);
+        text-align: left;
+
+        li {
+            padding: 1rem 3rem;
+        }
+    }
+
+    .recon__list {
+        width: 40rem;
+        min-width: 40rem;
+    }
+
+    // Pie de página
+
+    .footer__container {
+        width: 100%;
+    }
+
+    .footer__logo {
+        img {
+            position: static;
+            width: 30rem;
+        }
+    }
+
+    .footer__social {
+        width: 30rem;
+        text-align: center;
+
+        img {
+            margin: 1rem 0.3rem;
+
+            &:hover {
+                transition: 0.1s;
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    .footer__addresses {
+        flex-direction: row;
+
+        img {
+            margin: 0;
+        }
+    }
+
+    .footer__list {
+        @include flex (row, center, auto, wrap);
+        width: 18rem;
+    }
+
+    .addresses__info {
+        margin: 0;
+
+        p {
+            margin: 0.5rem 0;
+        }
+    }
+
+    #la-paloma {
+        margin: 0;
+    }
+}

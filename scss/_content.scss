@@ -1,0 +1,304 @@
+// Resets
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primaryFont;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: black;
+    }
+}
+
+h1 {
+    font-weight: $textBold;
+}
+
+h2 {
+    @extend h1;
+    font-size: $subtitle1Size;
+}
+
+h3 {
+    font-size: $subtitle2Size;
+}
+
+p {
+    font-size: $paragraphSize;
+    padding-bottom: 2rem;
+}
+
+// Navegación
+
+.nav {
+    background-color: map-get($map: $paleta, $key: 'white');
+    position: sticky;
+    top: 0px;
+    padding: 5px 15px 0 15px;
+    z-index: 100;
+
+    ul {
+        li {
+            margin: 10px 1rem;
+            text-align: center;
+        }
+    }
+}
+
+.nav__ul {
+    justify-content: right;
+}
+
+.nav__logo {
+    display: block;
+    width: 140px;
+    min-width: 160px;
+    margin-right: 10px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.nav__button {
+    width: 3rem;
+    height: 3rem;
+}
+
+.nav__links {
+    color: map-get($map: $paleta, $key: 'black');
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &:hover {
+        transition: 0.1s;
+        color: map-get($map: $paleta, $key: 'uno');
+    }
+}
+
+// Cabecera
+
+.header {
+    @include flex(auto, center, center, auto);
+    height: calc(100vh - 230px);
+    min-height: 27rem;
+    overflow: hidden;
+}
+
+.header--margin {
+    margin-bottom: 6rem;
+    min-height: 42rem;
+}
+
+.header__title {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    color: map-get($map: $paleta, $key: 'white');
+    text-shadow: 0px 0px 5px map-get($map: $paleta, $key: 'black');
+    text-transform: uppercase;
+    opacity: 0.9;
+    padding: 0 3rem;
+    animation: header-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+.header__title--bottom {
+    margin-top: 35rem;
+}
+
+.header__photo {
+    height: 100%;
+    min-height: 40rem;
+}
+
+.header__foto--left {
+    position: relative;
+    left: 50rem;
+}
+
+// Cabecera animación
+
+@keyframes header-anim {
+
+    from {
+        opacity: 0;
+        transform: translateY(2em);
+    }
+
+    to {}
+}
+
+// Mains
+
+.main {
+    @include flex(column, auto, auto, auto);
+    margin: 0 15px;
+}
+
+// Información de la empresa
+
+.overview {
+    background-color: map-get($map: $paleta, $key: 'uno');
+    position: relative;
+    top: -55px;
+    color: map-get($map: $paleta, $key: 'white');
+    text-align: center;
+    line-height: 25px;
+    border-bottom: 5px map-get($map: $paleta, $key: 'black') solid;
+    padding: 1rem 2rem 4rem 2rem;
+}
+
+.overview__title {
+    margin-bottom: 2rem;
+}
+
+// Noticias
+
+.news {
+    h2 {
+        margin-bottom: 6rem;
+        text-align: center;
+    }
+
+    small {
+        font-size: 12px;
+    }
+}
+
+// Reconocimientos internacionales
+
+.recon {
+    @include flex (column, auto, center, auto);
+    margin: 10rem 0;
+    text-align: center;
+
+    li {
+        padding: 1rem;
+    }
+}
+
+.recon__title {
+    margin-bottom: 5rem;
+}
+
+.recon__list {
+    @include flex (auto, center, auto, wrap);
+    width: 30rem;
+}
+
+// Newsletter
+
+.newsletter {
+    background-color: map-get($map: $paleta, $key: uno);
+    padding: 3rem 0;
+    line-height: 4rem;
+    text-align: center;
+
+    form input {
+        text-align: center;
+        font-weight: $textBold;
+        width: 25rem;
+        height: 3rem;
+    }
+}
+
+.newsletter__title {
+    font-size: 15px;
+    color: map-get($map: $paleta, $key: 'white');
+}
+
+// Pie de página
+
+.footer {
+    @include flex (auto, center, auto, wrap);
+    background-color: map-get($map: $paleta, $key: 'black');
+    padding-top: 1rem;
+    color: map-get($map: $paleta, $key: 'white');
+}
+
+.footer__logo {
+    width: 200px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+
+    img {
+        position: relative;
+        left: -3rem;
+        width: 22rem;
+    }
+}
+
+.footer__social {
+    position: relative;
+    left: -1.6rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    line-height: 2rem;
+
+    img {
+        width: 20px;
+        padding: 1px;
+        margin-left: 5px;
+    }
+}
+
+.footer__addresses {
+    @include flex (column, auto, auto, wrap);
+    margin: 3rem 0 3rem 0;
+
+    h3 {
+        display: inline;
+    }
+
+    img {
+        width: 15px;
+        height: 15px;
+        margin-right: 1rem;
+    }
+}
+
+.footer__list {
+    @include flex(auto, auto, auto, auto);
+    margin-bottom: 3rem;
+}
+
+.addresses__info {
+    @include flex (column, auto, auto, auto);
+    margin-left: 6rem;
+
+    p {
+        text-align: center;
+        font-size: 12px;
+        margin: -6px 0;
+    }
+}
+
+.footer__copyR {
+    border-top: map-get($map: $paleta, $key: 'uno') 1px solid;
+    padding: 2rem 0;
+    text-align: center;
+    width: 50%;
+}
+
+#la-paloma {
+    margin-left: 10rem;
+}

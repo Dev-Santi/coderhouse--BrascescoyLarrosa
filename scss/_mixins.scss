@@ -1,0 +1,11 @@
+// Flex
+
+@mixin flex($dire, $justify, $align, $wrap) {
+    display: flex;
+    flex-direction: $dire;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+// Ejemplo --- @include flex(row,center,flex-end, nowrap);
