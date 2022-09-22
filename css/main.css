@@ -353,6 +353,7 @@ p {
   text-align: center;
 }
 .newsletter form input, .newsletter form .form select, .form .newsletter form select, .newsletter form .form textarea, .form .newsletter form textarea {
+  background-color: #ffffff;
   text-align: center;
   font-weight: 700;
   width: 25rem;

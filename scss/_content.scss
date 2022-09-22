@@ -388,6 +388,7 @@ p {
     text-align: center;
 
     form input {
+        background-color: map-get($map: $paleta, $key: 'white');
         text-align: center;
         font-weight: $textBold;
         width: 25rem;
