@@ -100,8 +100,8 @@
     .news .card {
         &:hover {
             transition: color 0.2s, transform 0.5s;
-            color: white;
-            background-color: #fd5000;
+            color: map-get($map: $paleta, $key: 'white');;
+            background-color: map-get($map: $paleta, $key: 'uno');
             transform: scale(1.05);
         }
     }

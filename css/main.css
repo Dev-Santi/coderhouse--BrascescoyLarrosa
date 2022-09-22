@@ -16,10 +16,10 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 a:hover {
-  color: black;
+  color: #000000;
 }
 
 h1, h2 {
@@ -44,7 +44,7 @@ p {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  padding: 5px 15px 0 15px;
+  padding: 15px;
   z-index: 100;
 }
 .nav ul li {
@@ -66,11 +66,6 @@ p {
   width: 100%;
 }
 
-.nav__button {
-  width: 3rem;
-  height: 3rem;
-}
-
 .nav__links {
   color: #000000;
   font-size: 14px;
@@ -79,7 +74,17 @@ p {
 }
 .nav__links:hover {
   transition: 0.1s;
-  color: #fd5000;
+  color: #F55000;
+}
+
+.button {
+  background-color: #ffffff;
+  border: none;
+  margin-right: 1rem;
+}
+
+.hamburguer {
+  fill: #F55000;
 }
 
 .header {
@@ -158,9 +163,9 @@ p {
 }
 
 .overview {
-  background-color: #fd5000;
+  background-color: #F55000;
   position: relative;
-  top: -55px;
+  top: -75px;
   color: #ffffff;
   text-align: center;
   line-height: 25px;
@@ -201,7 +206,7 @@ p {
 .practice-areas a:hover {
   transition: color 0.5s, transform 0.2s;
   color: #ffffff;
-  background-color: #fd5000;
+  background-color: #F55000;
   transform: scale(1.05);
 }
 
@@ -217,9 +222,6 @@ p {
   margin: 2rem;
 }
 
-.quality {
-  margin: 0 15px;
-}
 .quality h2 {
   margin-top: 4rem;
   margin-bottom: 2rem;
@@ -264,7 +266,7 @@ p {
   padding: 0;
   margin-bottom: 1rem;
   opacity: 0.8;
-  background-color: #fd5000;
+  background-color: #F55000;
   margin-top: 1rem;
 }
 .form div input:hover, .form div select:hover, .form div textarea:hover {
@@ -308,7 +310,7 @@ p {
   padding: 0;
   margin-bottom: 1rem;
   opacity: 0.8;
-  background-color: #fd5000;
+  background-color: #F55000;
   margin-top: 1rem;
   width: 20rem;
 }
@@ -345,7 +347,7 @@ p {
 }
 
 .newsletter {
-  background-color: #fd5000;
+  background-color: #F55000;
   padding: 3rem 0;
   line-height: 4rem;
   text-align: center;
@@ -439,7 +441,7 @@ p {
 }
 
 .footer__copyR {
-  border-top: #fd5000 1px solid;
+  border-top: #F55000 1px solid;
   padding: 2rem 0;
   text-align: center;
   width: 50%;
@@ -569,8 +571,8 @@ p {
   }
   .news .card:hover {
     transition: color 0.2s, transform 0.5s;
-    color: white;
-    background-color: #fd5000;
+    color: #ffffff;
+    background-color: #F55000;
     transform: scale(1.05);
   }
   .branch {

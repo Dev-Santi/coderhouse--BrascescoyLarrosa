@@ -17,10 +17,10 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: map-get($map: $paleta, $key: 'black');
 
     &:hover {
-        color: black;
+        color: map-get($map: $paleta, $key: 'black');
     }
 }
 
@@ -48,7 +48,7 @@ p {
     background-color: map-get($map: $paleta, $key: 'white');
     position: sticky;
     top: 0px;
-    padding: 5px 15px 0 15px;
+    padding: 15px;
     z-index: 100;
 
     ul {
@@ -74,11 +74,6 @@ p {
     }
 }
 
-.nav__button {
-    width: 3rem;
-    height: 3rem;
-}
-
 .nav__links {
     color: map-get($map: $paleta, $key: 'black');
     font-size: 14px;
@@ -89,6 +84,16 @@ p {
         transition: 0.1s;
         color: map-get($map: $paleta, $key: 'uno');
     }
+}
+
+.button {
+    background-color: map-get($map: $paleta, $key: 'white');
+    border: none;
+    margin-right: 1rem;
+}
+
+.hamburguer {
+    fill: map-get($map: $paleta, $key: 'uno');
 }
 
 // Cabecera
@@ -163,7 +168,7 @@ p {
 .overview {
     background-color: map-get($map: $paleta, $key: 'uno');
     position: relative;
-    top: -55px;
+    top: -75px;
     color: map-get($map: $paleta, $key: 'white');
     text-align: center;
     line-height: 25px;
@@ -240,8 +245,6 @@ p {
 // Política de calidad
 
 .quality {
-    margin: 0 15px;
-
     h2 {
         margin-top: 4rem;
         margin-bottom: 2rem;
