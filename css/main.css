@@ -27,11 +27,11 @@ h1, h2 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 p {
@@ -126,6 +126,10 @@ p {
   min-height: 40rem;
 }
 
+#contactHeader {
+  margin-left: 75rem;
+}
+
 .header__foto--left {
   position: relative;
   left: 50rem;
@@ -176,6 +180,144 @@ p {
   font-size: 12px;
 }
 
+.who-we-are p {
+  font-size: 15px;
+  margin: 2rem 1.5rem;
+}
+
+.practice-areas h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.practice-areas a {
+  width: 90%;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #eeeeee;
+  color: #000000;
+}
+.practice-areas a:hover {
+  transition: color 0.5s, transform 0.2s;
+  color: #ffffff;
+  background-color: #fd5000;
+  transform: scale(1.05);
+}
+
+.carrusel--height {
+  height: 35rem;
+}
+
+.carrusel--heightB {
+  width: 820px;
+}
+
+.work-with-us {
+  margin: 2rem;
+}
+
+.quality {
+  margin: 0 15px;
+}
+.quality h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.quality__flex {
+  display: flex;
+  flex-direction: auto;
+  justify-content: auto;
+  align-items: center;
+  flex-wrap: auto;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.quality__flex a img {
+  width: 5rem;
+  opacity: 0.5;
+}
+
+.form {
+  margin-bottom: 5rem;
+  font-size: 15px;
+}
+.form h2 {
+  text-align: center;
+  margin: 3rem 0 4rem 0;
+}
+.form input, .form textarea, .form select {
+  background-color: #ffffff;
+  height: 5rem;
+  width: 90%;
+  border: #eeeeee 1px solid;
+  border-radius: 8px;
+  padding-left: 2rem;
+}
+.form textarea {
+  height: auto;
+  padding-top: 1rem;
+}
+.form div input, .form div select, .form div textarea {
+  padding: 0;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  background-color: #fd5000;
+  margin-top: 1rem;
+}
+.form div input:hover, .form div select:hover, .form div textarea:hover {
+  transition: 0.2s;
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+.branch {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: center;
+  flex-wrap: auto;
+  position: relative;
+  left: -10px;
+  top: -8rem;
+}
+.branch li {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: center;
+  flex-wrap: auto;
+  margin-bottom: 1rem;
+}
+.branch h3 {
+  border-bottom: 3px solid #eeeeee;
+}
+.branch p {
+  font-size: 15px;
+  padding: 0;
+}
+.branch img {
+  width: 230px;
+  box-shadow: 0 2px 15px rgba(112, 112, 112, 0.9333333333);
+  margin-bottom: 1rem;
+}
+
+#submit {
+  padding: 0;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  background-color: #fd5000;
+  margin-top: 1rem;
+  width: 20rem;
+}
+#submit:hover {
+  transition: 0.2s;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
 .recon {
   display: flex;
   flex-direction: column;
@@ -208,7 +350,7 @@ p {
   line-height: 4rem;
   text-align: center;
 }
-.newsletter form input {
+.newsletter form input, .newsletter form .form select, .form .newsletter form select, .newsletter form .form textarea, .form .newsletter form textarea {
   text-align: center;
   font-weight: 700;
   width: 25rem;
@@ -262,6 +404,7 @@ p {
   align-items: auto;
   flex-wrap: wrap;
   margin: 3rem 0 3rem 0;
+  width: 340px;
 }
 .footer__addresses h3 {
   display: inline;
@@ -302,8 +445,12 @@ p {
   width: 50%;
 }
 
+#maldonado {
+  margin-left: 5rem;
+}
+
 #la-paloma {
-  margin-left: 10rem;
+  margin-left: 9.2rem;
 }
 
 #nav {
@@ -414,6 +561,9 @@ p {
   .header__foto--left {
     position: static;
   }
+  #contactHeader {
+    margin-left: 0;
+  }
   .news h2 {
     text-align: left;
   }
@@ -422,6 +572,28 @@ p {
     color: white;
     background-color: #fd5000;
     transform: scale(1.05);
+  }
+  .branch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: auto;
+    flex-wrap: wrap;
+    top: -5rem;
+  }
+  .branch li {
+    margin: 0 20px;
+  }
+  .carrusel {
+    box-shadow: 0 0 5px #000000;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  .carrusel--height {
+    height: auto;
+  }
+  .carrusel--heightB {
+    width: auto;
   }
   .recon {
     display: flex;
@@ -439,7 +611,7 @@ p {
     min-width: 40rem;
   }
   .footer__container {
-    width: 100%;
+    width: 768px;
   }
   .footer__logo img {
     position: static;
@@ -458,6 +630,7 @@ p {
   }
   .footer__addresses {
     flex-direction: row;
+    width: auto;
   }
   .footer__addresses img {
     margin: 0;
@@ -478,5 +651,52 @@ p {
   }
   #la-paloma {
     margin: 0;
+  }
+}
+@media (min-width: 1160px) {
+  .index__grid {
+    grid-template-columns: 20% 60% 20%;
+  }
+  .container__grid {
+    grid-template-columns: 20% 60% 20%;
+  }
+  .practice-areas__grid {
+    grid-template-columns: 50% 50%;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+  .header__title--left {
+    width: 60%;
+    text-align: left;
+    padding: 0;
+  }
+  .who-we-are {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+  .who-we-are p {
+    margin: 0;
+  }
+  .practice-areas h2 {
+    margin: 3rem 0;
+    text-align: left;
+  }
+  .quality h2 {
+    text-align: left;
+  }
+  .quality div a:hover {
+    transition: 0.2s;
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  .branch {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  .footer__container {
+    width: 1280px;
+  }
+  .footer__social {
+    margin-left: 10rem;
   }
 }/*# sourceMappingURL=main.css.map */

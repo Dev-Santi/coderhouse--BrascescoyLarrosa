@@ -28,7 +28,7 @@
     }
 }
 
-// Breakpoin 4
+// Breakpoint 4
 
 @media (min-width: 740px) {
 
@@ -85,6 +85,10 @@
         position: static;
     }
 
+    #contactHeader {
+        margin-left: 0;
+    }
+
     // Noticias
 
     .news {
@@ -100,6 +104,33 @@
             background-color: #fd5000;
             transform: scale(1.05);
         }
+    }
+
+    // Contacto
+
+    .branch {
+        @include flex (row, center, auto, wrap);
+        top: -5rem;
+
+        li {
+            margin: 0 20px;
+        }
+    }
+
+    // Recomendaciones
+
+    .carrusel {
+        box-shadow: 0 0 5px map-get($map: $paleta, $key: 'black');
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .carrusel--height {
+        height: auto;
+    }
+
+    .carrusel--heightB {
+        width: auto;
     }
 
     // Reconocimientos internacionales
@@ -121,7 +152,7 @@
     // Pie de página
 
     .footer__container {
-        width: 100%;
+        width: 768px;
     }
 
     .footer__logo {
@@ -147,6 +178,7 @@
 
     .footer__addresses {
         flex-direction: row;
+        width: auto;
 
         img {
             margin: 0;
@@ -169,4 +201,80 @@
     #la-paloma {
         margin: 0;
     }
+}
+
+// Breakpoint 5
+
+@media (min-width: 1160px) {
+
+    // Contenedores grid
+
+    .index__grid {
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    .container__grid {
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    .practice-areas__grid {
+        grid-template-columns: 50% 50%;
+        column-gap: 1rem;
+    }
+
+    // Cabeceras
+
+    .header__title--left {
+        width: 60%;
+        text-align: left;
+        padding: 0;
+    }
+
+    // Quiénes somos
+
+    .who-we-are {
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+    }
+
+    .who-we-are p {
+        margin: 0;
+    }
+
+    // Áreas de práctica
+
+    .practice-areas h2 {
+        margin: 3rem 0;
+        text-align: left;
+    }
+
+    // Políticas de calidad
+
+    .quality h2 {
+        text-align: left;
+    }
+
+    .quality div a:hover {
+        transition: 0.2s;
+        transform: scale(1.5);
+        opacity: 1;
+    }
+
+    // Contacto
+
+    .branch {
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    // Pié de página
+
+    .footer__container {
+        width: 1280px;
+    }
+
+    .footer__social {
+        margin-left: 10rem;
+    }
+
 }

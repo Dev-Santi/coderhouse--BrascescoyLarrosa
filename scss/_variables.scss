@@ -5,9 +5,10 @@ $primaryFont: 'Montserrat', sans-serif;
 // Modificadores de texto
 
 $textBold: 700;
-$subtitle1Size: 20px;
-$subtitle2Size: 18px;
+$subtitle1Size: 22px;
+$subtitle2Size: 20px;
 $paragraphSize: 15px;
+$formTextSize: 15px;
 
 // Colores
 
@@ -17,5 +18,6 @@ $paleta: (
     'tres':#eb7f4d,
     'white':#ffffff,
     'black':#000000,
-    'gray':#252525,
+    'gray':#eeeeee,
+    'darkGray': #707070ee
 );

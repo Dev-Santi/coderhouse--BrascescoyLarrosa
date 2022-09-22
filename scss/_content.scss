@@ -130,6 +130,10 @@ p {
     min-height: 40rem;
 }
 
+#contactHeader {
+    margin-left: 75rem;
+}
+
 .header__foto--left {
     position: relative;
     left: 50rem;
@@ -181,6 +185,173 @@ p {
 
     small {
         font-size: 12px;
+    }
+}
+
+// Quiénes somos
+
+.who-we-are p {
+    font-size: $paragraphSize;
+    margin: 2rem 1.5rem;
+}
+
+// Áreas de práctica
+
+.practice-areas {
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    a {
+        width: 90%;
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 15px 0;
+        text-align: center;
+        background-color: map-get($map: $paleta, $key: 'gray');
+        color: map-get($map: $paleta, $key: 'black');
+
+        &:hover {
+            transition: color 0.5s, transform 0.2s;
+            color: map-get($map: $paleta, $key: 'white');
+            background-color: map-get($map: $paleta, $key: 'uno');
+            transform: scale(1.05);
+        }
+    }
+}
+
+// Recomendaciones
+
+.carrusel--height {
+    height: 35rem;
+}
+
+.carrusel--heightB {
+    width: 820px;
+}
+
+// Trabaja con nosotros
+
+.work-with-us {
+    margin: 2rem;
+}
+
+// Política de calidad
+
+.quality {
+    margin: 0 15px;
+
+    h2 {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+.quality__flex {
+    @include flex(auto, auto, center, auto);
+    align-items: center;
+    margin-bottom: 3rem;
+
+    a {
+        img {
+            width: 5rem;
+            opacity: 0.5;
+        }
+    }
+}
+
+// Formulario de trabajo
+
+.form {
+    margin-bottom: 5rem;
+    font-size: $formTextSize;
+
+    h2 {
+        text-align: center;
+        margin: 3rem 0 4rem 0;
+    }
+
+    input {
+        background-color: map-get($map: $paleta, $key: 'white');
+        height: 5rem;
+        width: 90%;
+        border: map-get($map: $paleta, $key: 'gray') 1px solid;
+        border-radius: 8px;
+        padding-left: 2rem;
+    }
+
+    select {
+        @extend input;
+    }
+
+    textarea {
+        @extend input;
+        height: auto;
+        padding-top: 1rem;
+    }
+
+    div {
+        input {
+            padding: 0;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+            background-color: map-get($map: $paleta, $key: 'uno');
+            margin-top: 1rem;
+
+            &:hover {
+                transition: 0.2s;
+                transform: scale(1.3);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// Contacto
+
+.branch {
+    @include flex (column, auto, center, auto);
+    position: relative;
+    left: -10px;
+    top: -8rem;
+
+    li {
+        @include flex (column, auto, center, auto);
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        border-bottom: 3px solid map-get($map: $paleta, $key: 'gray');
+    }
+
+    p {
+        font-size: $paragraphSize;
+        padding: 0;
+    }
+
+    img {
+        width: 230px;
+        box-shadow: 0 2px 15px map-get($map: $paleta, $key: 'darkGray');
+        margin-bottom: 1rem;
+    }
+}
+
+// Formulario de contacto
+
+#submit {
+    padding: 0;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+    background-color: map-get($map: $paleta, $key: 'uno');
+    margin-top: 1rem;
+    width: 20rem;
+
+    &:hover {
+        transition: 0.2s;
+        transform: scale(1.2);
+        opacity: 1;
     }
 }
 
@@ -264,6 +435,7 @@ p {
 .footer__addresses {
     @include flex (column, auto, auto, wrap);
     margin: 3rem 0 3rem 0;
+    width: 340px;
 
     h3 {
         display: inline;
@@ -299,6 +471,10 @@ p {
     width: 50%;
 }
 
+#maldonado {
+    margin-left: 5rem;
+}
+
 #la-paloma {
-    margin-left: 10rem;
+    margin-left: 9.2rem;
 }
