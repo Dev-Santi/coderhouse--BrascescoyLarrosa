@@ -101,6 +101,7 @@ p {
 .header--margin {
   margin-bottom: 6rem;
   min-height: 42rem;
+  height: 55rem;
 }
 
 .header__title {
