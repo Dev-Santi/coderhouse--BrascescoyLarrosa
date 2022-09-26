@@ -295,7 +295,7 @@ p {
   justify-content: auto;
   align-items: center;
   flex-wrap: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 .branch h3 {
   border-bottom: 3px solid #eeeeee;
@@ -592,7 +592,7 @@ p {
     top: -5rem;
   }
   .branch li {
-    margin: 0 20px;
+    margin: 0 2rem 5rem 2rem;
   }
   .carrusel {
     box-shadow: 0 0 5px #000000;
