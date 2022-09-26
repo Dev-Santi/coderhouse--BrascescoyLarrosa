@@ -178,6 +178,9 @@ p {
   margin-bottom: 2rem;
 }
 
+.news .cards {
+  width: 75%;
+}
 .news h2 {
   margin-bottom: 6rem;
   text-align: center;
@@ -454,7 +457,7 @@ p {
 }
 
 #la-paloma {
-  margin-left: 9.2rem;
+  margin-left: 8.3rem;
 }
 
 #nav {
@@ -571,6 +574,9 @@ p {
   .news h2 {
     text-align: left;
   }
+  .news .cards {
+    width: 100%;
+  }
   .news .card:hover {
     transition: color 0.2s, transform 0.5s;
     color: #ffffff;
@@ -652,6 +658,9 @@ p {
   }
   .addresses__info p {
     margin: 0.5rem 0;
+  }
+  #maldonado {
+    margin-right: 4rem;
   }
   #la-paloma {
     margin: 0;

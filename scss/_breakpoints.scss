@@ -95,14 +95,19 @@
         h2 {
             text-align: left;
         }
-    }
 
-    .news .card {
-        &:hover {
-            transition: color 0.2s, transform 0.5s;
-            color: map-get($map: $paleta, $key: 'white');;
-            background-color: map-get($map: $paleta, $key: 'uno');
-            transform: scale(1.05);
+        .cards {
+            width: 100%;
+        }
+
+        .card {
+            &:hover {
+                transition: color 0.2s, transform 0.5s;
+                color: map-get($map: $paleta, $key: 'white');
+                ;
+                background-color: map-get($map: $paleta, $key: 'uno');
+                transform: scale(1.05);
+            }
         }
     }
 
@@ -196,6 +201,10 @@
         p {
             margin: 0.5rem 0;
         }
+    }
+
+    #maldonado {
+        margin-right: 4rem;
     }
 
     #la-paloma {
