@@ -200,9 +200,11 @@ p {
 
 // Quiénes somos
 
-.who-we-are p {
-    font-size: $paragraphSize;
-    margin: 2rem 1.5rem;
+.who-we-are {
+    p {
+        font-size: $paragraphSize;
+        margin: 2rem 1.5rem;
+    }
 }
 
 // Áreas de práctica
@@ -250,23 +252,12 @@ p {
 // Política de calidad
 
 .quality {
+    margin: 0 2rem;
+
     h2 {
         margin-top: 4rem;
         margin-bottom: 2rem;
         text-align: center;
-    }
-}
-
-.quality__flex {
-    @include flex(auto, auto, center, auto);
-    align-items: center;
-    margin-bottom: 3rem;
-
-    a {
-        img {
-            width: 5rem;
-            opacity: 0.5;
-        }
     }
 }
 

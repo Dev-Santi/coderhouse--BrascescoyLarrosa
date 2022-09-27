@@ -244,31 +244,36 @@
     .who-we-are {
         margin-top: 3rem;
         margin-bottom: 6rem;
-    }
-
-    .who-we-are p {
-        margin: 0;
+        p {
+            margin: 0;
+        }
     }
 
     // Áreas de práctica
 
-    .practice-areas h2 {
-        margin: 3rem 0;
-        text-align: left;
+    .practice-areas {
+        h2 {
+            margin: 3rem 0;
+            text-align: left;
+        }
     }
 
     // Políticas de calidad
 
-    .quality h2 {
-        text-align: left;
-    }
+    .quality {
+        margin: 0;
 
-    .quality div a:hover {
-        transition: 0.2s;
-        transform: scale(1.5);
-        opacity: 1;
-    }
+        div a:hover {
+            transition: 0.2s;
+            transform: scale(1.5);
+            opacity: 1;
+        }
 
+        h2 {
+            text-align: left;
+        }
+    }
+    
     // Contacto
 
     .branch {

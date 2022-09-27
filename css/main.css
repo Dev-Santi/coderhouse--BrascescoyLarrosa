@@ -226,24 +226,13 @@ p {
   margin: 2rem;
 }
 
+.quality {
+  margin: 0 2rem;
+}
 .quality h2 {
   margin-top: 4rem;
   margin-bottom: 2rem;
   text-align: center;
-}
-
-.quality__flex {
-  display: flex;
-  flex-direction: auto;
-  justify-content: auto;
-  align-items: center;
-  flex-wrap: auto;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-.quality__flex a img {
-  width: 5rem;
-  opacity: 0.5;
 }
 
 .form {
@@ -694,13 +683,16 @@ p {
     margin: 3rem 0;
     text-align: left;
   }
-  .quality h2 {
-    text-align: left;
+  .quality {
+    margin: 0;
   }
   .quality div a:hover {
     transition: 0.2s;
     transform: scale(1.5);
     opacity: 1;
+  }
+  .quality h2 {
+    text-align: left;
   }
   .branch {
     justify-content: space-around;
