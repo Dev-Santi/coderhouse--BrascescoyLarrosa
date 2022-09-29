@@ -134,10 +134,6 @@
         height: auto;
     }
 
-    .carrusel--heightB {
-        width: auto;
-    }
-
     // Reconocimientos internacionales
 
     .recon {
@@ -193,6 +189,7 @@
     .footer__list {
         @include flex (row, center, auto, wrap);
         width: 18rem;
+        margin: 0 1rem;
     }
 
     .addresses__info {
@@ -204,7 +201,8 @@
     }
 
     #maldonado {
-        margin-right: 4rem;
+        margin-right: 2rem;
+        margin-left: 3rem;
     }
 
     #la-paloma {
@@ -244,6 +242,7 @@
     .who-we-are {
         margin-top: 3rem;
         margin-bottom: 6rem;
+
         p {
             margin: 0;
         }
@@ -273,7 +272,7 @@
             text-align: left;
         }
     }
-    
+
     // Contacto
 
     .branch {

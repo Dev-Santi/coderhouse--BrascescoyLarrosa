@@ -218,8 +218,8 @@ p {
   height: 35rem;
 }
 
-.carrusel--heightB {
-  width: 820px;
+.carrusel--overflow {
+  overflow: hidden;
 }
 
 .work-with-us {
@@ -370,22 +370,24 @@ p {
 }
 
 .footer__logo {
-  width: 200px;
-  margin-left: 2rem;
+  width: 160px;
+  margin-right: 3rem;
   margin-top: 2rem;
 }
 .footer__logo img {
-  position: relative;
-  left: -3rem;
-  width: 22rem;
+  width: 220px;
 }
 
 .footer__social {
+  width: 20%;
   position: relative;
   left: -1.6rem;
-  margin-left: 3rem;
+  margin-left: 5rem;
   margin-top: 2rem;
   line-height: 2rem;
+}
+.footer__social h3 {
+  font-size: 18px;
 }
 .footer__social img {
   width: 20px;
@@ -399,8 +401,8 @@ p {
   justify-content: auto;
   align-items: auto;
   flex-wrap: wrap;
-  margin: 3rem 0 3rem 0;
-  width: 340px;
+  margin: 3rem;
+  width: 300px;
 }
 .footer__addresses h3 {
   display: inline;
@@ -442,7 +444,7 @@ p {
 }
 
 #maldonado {
-  margin-left: 5rem;
+  margin-left: 9rem;
 }
 
 #la-paloma {
@@ -591,9 +593,6 @@ p {
   .carrusel--height {
     height: auto;
   }
-  .carrusel--heightB {
-    width: auto;
-  }
   .recon {
     display: flex;
     flex-direction: row;
@@ -641,6 +640,7 @@ p {
     align-items: auto;
     flex-wrap: wrap;
     width: 18rem;
+    margin: 0 1rem;
   }
   .addresses__info {
     margin: 0;
@@ -649,7 +649,8 @@ p {
     margin: 0.5rem 0;
   }
   #maldonado {
-    margin-right: 4rem;
+    margin-right: 2rem;
+    margin-left: 3rem;
   }
   #la-paloma {
     margin: 0;

@@ -239,8 +239,8 @@ p {
     height: 35rem;
 }
 
-.carrusel--heightB {
-    width: 820px;
+.carrusel--overflow {
+    overflow: hidden;
 }
 
 // Trabaja con nosotros
@@ -398,7 +398,6 @@ p {
 }
 
 // Pie de página
-
 .footer {
     @include flex (auto, center, auto, wrap);
     background-color: map-get($map: $paleta, $key: 'black');
@@ -407,23 +406,26 @@ p {
 }
 
 .footer__logo {
-    width: 200px;
-    margin-left: 2rem;
+    width: 160px;
+    margin-right: 3rem;
     margin-top: 2rem;
 
     img {
-        position: relative;
-        left: -3rem;
-        width: 22rem;
+        width: 220px;
     }
 }
 
 .footer__social {
+    width: 20%;
     position: relative;
     left: -1.6rem;
-    margin-left: 3rem;
+    margin-left: 5rem;
     margin-top: 2rem;
     line-height: 2rem;
+
+    h3 {
+        font-size: 18px;
+    }
 
     img {
         width: 20px;
@@ -434,8 +436,8 @@ p {
 
 .footer__addresses {
     @include flex (column, auto, auto, wrap);
-    margin: 3rem 0 3rem 0;
-    width: 340px;
+    margin: 3rem;
+    width: 300px;
 
     h3 {
         display: inline;
@@ -472,7 +474,7 @@ p {
 }
 
 #maldonado {
-    margin-left: 5rem;
+    margin-left: 9rem;
 }
 
 #la-paloma {
