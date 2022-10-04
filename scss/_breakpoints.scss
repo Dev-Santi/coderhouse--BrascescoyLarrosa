@@ -10,16 +10,6 @@
 
 // Breakpoint 2
 
-@media (min-width: 400px) {
-
-    //footer
-    .footer__social {
-        left: 0;
-    }
-}
-
-// Breakpoint 3
-
 @media (min-width: 480px) {
 
     //header
@@ -28,7 +18,7 @@
     }
 }
 
-// Breakpoint 4
+// Breakpoint 3
 
 @media (min-width: 740px) {
 
@@ -151,65 +141,21 @@
 
     // Pie de página
 
-    .footer__container {
-        width: 768px;
-    }
-
-    .footer__logo {
-        img {
-            position: static;
-            width: 30rem;
-        }
-    }
-
-    .footer__social {
-        width: 30rem;
-        text-align: center;
-
-        img {
-            margin: 1rem 0.3rem;
-
-            &:hover {
-                transition: 0.1s;
-                transform: scale(1.5);
+    .locations {
+        ul {
+            width: 90%;
+            @include flex(auto, auto, auto, auto);
+            li {
+                ul {
+                    width: 100%;
+                    @include flex(column, auto, auto, auto);
+                }
             }
         }
     }
-
-    .footer__addresses {
-        flex-direction: row;
-        width: auto;
-
-        img {
-            margin: 0;
-        }
-    }
-
-    .footer__list {
-        @include flex (row, center, auto, wrap);
-        width: 18rem;
-        margin: 0 1rem;
-    }
-
-    .addresses__info {
-        margin: 0;
-
-        p {
-            margin: 0.5rem 0;
-        }
-    }
-
-    #maldonado {
-        margin-right: 2rem;
-        margin-left: 3rem;
-    }
-
-    #la-paloma {
-        margin: 0;
-    }
 }
 
-// Breakpoint 5
+// Breakpoint 4
 
 @media (min-width: 1160px) {
 
@@ -279,14 +225,20 @@
         flex-wrap: nowrap;
     }
 
-    // Pié de página
+    // Pie de página
+    .footer {
+        .footer__container {
+            width: 90%;
+            @include flex(row, space-between, auto, nowrap);
 
-    .footer__container {
-        width: 1280px;
+            .socialBx {
+                position: relative;
+                top: -25px;
+            }
+
+            .locations {
+                width: 700px;
+            }
+        }
     }
-
-    .footer__social {
-        margin-left: 10rem;
-    }
-
 }

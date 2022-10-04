@@ -398,85 +398,69 @@ p {
 }
 
 // Pie de página
+
 .footer {
-    @include flex (auto, center, auto, wrap);
     background-color: map-get($map: $paleta, $key: 'black');
-    padding-top: 1rem;
+    width: 100%;
     color: map-get($map: $paleta, $key: 'white');
-}
+    @include flex(column, auto, center, auto);
 
-.footer__logo {
-    width: 160px;
-    margin-right: 3rem;
-    margin-top: 2rem;
+    .footer__container {
+        margin: 15px 0;
+        width: 100%;
+        height: 100%;
+        @include flex(column, flex-start, center, auto);
+        
+        .logoBx {
+            width: 300px;
+            background-color: white;
 
-    img {
-        width: 220px;
+            img {
+                width: 100%;
+            }
+        }
+
+        .socialBx {
+            margin-top: 30px;
+            width: 300px;
+            text-align: center;
+
+            h3 {
+                line-height: 30px;
+            }
+
+            ul {
+                padding: 0;
+                @include flex(row, center, auto, nowrap);
+                gap: 10px;
+
+                li {
+                    img {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        .locations {
+            margin-top: 30px;
+            width: 100%;
+            @include flex(row, center, auto, nowrap);
+
+            ul {
+                text-align: center;
+                padding: 0;
+                li {
+                    width: 100%;
+                    ul {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
     }
-}
-
-.footer__social {
-    width: 20%;
-    position: relative;
-    left: -1.6rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-    line-height: 2rem;
-
-    h3 {
-        font-size: 18px;
-    }
-
-    img {
-        width: 20px;
-        padding: 1px;
-        margin-left: 5px;
-    }
-}
-
-.footer__addresses {
-    @include flex (column, auto, auto, wrap);
-    margin: 3rem;
-    width: 300px;
-
-    h3 {
-        display: inline;
-    }
-
-    img {
-        width: 15px;
-        height: 15px;
-        margin-right: 1rem;
-    }
-}
-
-.footer__list {
-    @include flex(auto, auto, auto, auto);
-    margin-bottom: 3rem;
-}
-
-.addresses__info {
-    @include flex (column, auto, auto, auto);
-    margin-left: 6rem;
-
-    p {
-        text-align: center;
+    
+    .copyR {
         font-size: 12px;
-        margin: -6px 0;
     }
-}
-
-.footer__copyR {
-    border-top: map-get($map: $paleta, $key: 'uno') 1px solid;
-    padding: 2rem 0;
-    text-align: center;
-    width: 50%;
-}
-
-#maldonado {
-    margin-left: 9rem;
-}
-
-#la-paloma {
-    margin-left: 8.3rem;
 }
