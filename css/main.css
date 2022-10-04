@@ -425,7 +425,11 @@ p {
   margin-bottom: 30px;
 }
 .footer .copyR {
+  width: 30%;
+  text-align: center;
+  border-top: 1px solid #F55000;
   font-size: 12px;
+  padding: 10px 0;
 }
 
 #nav {

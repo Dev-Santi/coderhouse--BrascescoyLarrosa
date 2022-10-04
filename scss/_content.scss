@@ -461,6 +461,10 @@ p {
     }
     
     .copyR {
+        width: 30%;
+        text-align: center;
+        border-top: 1px solid map-get($map: $paleta, $key: 'uno');
         font-size: 12px;
+        padding: 10px 0;
     }
 }
