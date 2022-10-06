@@ -9,3 +9,13 @@
 }
 
 // Ejemplo --- @include flex(row,center,flex-end, nowrap);
+
+// Reseteo de lista
+
+@mixin resetList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+//ejemplo --- @include resetList;

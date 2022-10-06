@@ -10,10 +10,6 @@ html {
   font-size: 62.5%;
 }
 
-li {
-  list-style-type: none;
-}
-
 a {
   text-decoration: none;
   color: #000000;
@@ -48,6 +44,9 @@ p {
   z-index: 100;
 }
 .nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   margin: 10px 1rem;
   text-align: center;
 }
@@ -336,6 +335,9 @@ p {
   justify-content: center;
   align-items: auto;
   flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   width: 30rem;
 }
 
@@ -354,7 +356,7 @@ p {
 }
 
 .newsletter__title {
-  font-size: 15px;
+  font-size: 20px;
   color: #ffffff;
 }
 
@@ -402,6 +404,11 @@ p {
   flex-wrap: nowrap;
   gap: 10px;
 }
+.footer .footer__container .socialBx ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .footer .footer__container .socialBx ul li img {
   width: 20px;
 }
@@ -419,6 +426,9 @@ p {
   padding: 0;
 }
 .footer .footer__container .locations ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 .footer .footer__container .locations ul li ul {

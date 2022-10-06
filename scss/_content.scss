@@ -11,10 +11,6 @@ html {
     font-size: 62.5%;
 }
 
-li {
-    list-style-type: none;
-}
-
 a {
     text-decoration: none;
     color: map-get($map: $paleta, $key: 'black');
@@ -53,6 +49,7 @@ p {
 
     ul {
         li {
+            @include resetList;
             margin: 10px 1rem;
             text-align: center;
         }
@@ -372,6 +369,7 @@ p {
 
 .recon__list {
     @include flex (auto, center, auto, wrap);
+    @include resetList;
     width: 30rem;
 }
 
@@ -395,7 +393,7 @@ p {
 }
 
 .newsletter__title {
-    font-size: 15px;
+    font-size: $subtitle2Size;
     color: map-get($map: $paleta, $key: 'white');
 }
 
@@ -437,6 +435,8 @@ p {
                 gap: 10px;
 
                 li {
+                    @include resetList;
+
                     img {
                         width: 20px;
                     }
@@ -454,6 +454,7 @@ p {
                 padding: 0;
 
                 li {
+                    @include resetList;
                     width: 100%;
 
                     ul {
