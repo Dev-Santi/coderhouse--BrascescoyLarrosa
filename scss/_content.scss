@@ -383,12 +383,14 @@ p {
     line-height: 4rem;
     text-align: center;
 
-    form input {
-        background-color: map-get($map: $paleta, $key: 'white');
-        text-align: center;
-        font-weight: $textBold;
-        width: 25rem;
-        height: 3rem;
+    form {
+        input {
+            background-color: map-get($map: $paleta, $key: 'white');
+            text-align: center;
+            font-weight: $textBold;
+            width: 25rem;
+            height: 3rem;
+        }
     }
 }
 
@@ -410,7 +412,7 @@ p {
         width: 100%;
         height: 100%;
         @include flex(column, flex-start, center, auto);
-        
+
         .logoBx {
             width: 300px;
             background-color: white;
@@ -450,8 +452,10 @@ p {
             ul {
                 text-align: center;
                 padding: 0;
+
                 li {
                     width: 100%;
+
                     ul {
                         margin-bottom: 30px;
                     }
@@ -459,7 +463,7 @@ p {
             }
         }
     }
-    
+
     .copyR {
         width: 30%;
         text-align: center;
