@@ -156,11 +156,15 @@
 
     .socialBx {
         ul {
-            a {
-                transition: 0.2s;
+            li {
+                a{
+                    img {
+                        transition: 0.2s;
 
-                &:hover {
-                    scale: 1.3;
+                        &:hover {
+                            scale: 1.3;
+                        }
+                    }
                 }
             }
         }
