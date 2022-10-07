@@ -88,10 +88,10 @@ p {
 
 .header {
   display: flex;
-  flex-direction: auto;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: auto;
+  flex-wrap: nowrap;
   height: calc(100vh - 230px);
   min-height: 27rem;
   overflow: hidden;
@@ -317,7 +317,7 @@ p {
   flex-direction: column;
   justify-content: auto;
   align-items: center;
-  flex-wrap: auto;
+  flex-wrap: nowrap;
   margin: 10rem 0;
   text-align: center;
 }
@@ -331,7 +331,7 @@ p {
 
 .recon__list {
   display: flex;
-  flex-direction: auto;
+  flex-direction: row;
   justify-content: center;
   align-items: auto;
   flex-wrap: wrap;
@@ -368,7 +368,7 @@ p {
   flex-direction: column;
   justify-content: auto;
   align-items: center;
-  flex-wrap: auto;
+  flex-wrap: nowrap;
 }
 .footer .footer__container {
   margin: 15px 0;
@@ -378,7 +378,7 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: auto;
+  flex-wrap: nowrap;
 }
 .footer .footer__container .logoBx {
   width: 300px;
@@ -444,10 +444,10 @@ p {
 
 .errorBody {
   display: flex;
-  flex-direction: auto;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: auto;
+  flex-wrap: nowrap;
   background-color: #270d00;
   height: 100vh;
   width: 100%;
@@ -492,7 +492,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: auto;
+  flex-wrap: nowrap;
   width: 100%;
 }
 .errorBody header .errorReturn h2 {
@@ -502,10 +502,10 @@ p {
 }
 .errorBody header .errorReturn a {
   display: flex;
-  flex-direction: auto;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: auto;
+  flex-wrap: nowrap;
   border-radius: 10px;
   width: 140px;
   height: 30px;
@@ -667,7 +667,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: auto;
-    flex-wrap: auto;
+    flex-wrap: nowrap;
     text-align: left;
   }
   .recon li {
@@ -686,10 +686,10 @@ p {
   .locations ul {
     width: 90%;
     display: flex;
-    flex-direction: auto;
+    flex-direction: row;
     justify-content: auto;
     align-items: auto;
-    flex-wrap: auto;
+    flex-wrap: nowrap;
   }
   .locations ul li ul {
     width: 100%;
@@ -697,7 +697,7 @@ p {
     flex-direction: column;
     justify-content: auto;
     align-items: auto;
-    flex-wrap: auto;
+    flex-wrap: nowrap;
   }
 }
 @media (min-width: 1160px) {

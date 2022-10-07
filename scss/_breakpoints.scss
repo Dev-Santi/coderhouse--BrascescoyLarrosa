@@ -139,7 +139,7 @@
     // Reconocimientos internacionales
 
     .recon {
-        @include flex (row, space-between, auto, auto);
+        @include flex (row, space-between, auto, nowrap);
         text-align: left;
 
         li {
@@ -173,12 +173,12 @@
     .locations {
         ul {
             width: 90%;
-            @include flex(auto, auto, auto, auto);
+            @include flex(row, auto, auto, nowrap);
 
             li {
                 ul {
                     width: 100%;
-                    @include flex(column, auto, auto, auto);
+                    @include flex(column, auto, auto, nowrap);
                 }
             }
         }

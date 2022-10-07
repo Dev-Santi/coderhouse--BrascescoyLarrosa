@@ -96,7 +96,7 @@ p {
 // Cabecera
 
 .header {
-    @include flex(auto, center, center, auto);
+    @include flex(row, center, center, nowrap);
     height: calc(100vh - 230px);
     min-height: 27rem;
     overflow: hidden;
@@ -354,7 +354,7 @@ p {
 // Reconocimientos internacionales
 
 .recon {
-    @include flex (column, auto, center, auto);
+    @include flex (column, auto, center, nowrap);
     margin: 10rem 0;
     text-align: center;
 
@@ -368,7 +368,7 @@ p {
 }
 
 .recon__list {
-    @include flex (auto, center, auto, wrap);
+    @include flex (row, center, auto, wrap);
     @include resetList;
     width: 30rem;
 }
@@ -403,13 +403,13 @@ p {
     background-color: map-get($map: $paleta, $key: 'black');
     width: 100%;
     color: map-get($map: $paleta, $key: 'white');
-    @include flex(column, auto, center, auto);
+    @include flex(column, auto, center, nowrap);
 
     .footer__container {
         margin: 15px 0;
         width: 100%;
         height: 100%;
-        @include flex(column, flex-start, center, auto);
+        @include flex(column, flex-start, center, nowrap);
 
         .logoBx {
             width: 300px;
@@ -477,7 +477,7 @@ p {
 //Página de error
 
 .errorBody {
-    @include flex(auto, center, center, auto);
+    @include flex(row, center, center, nowrap);
     background-color: map-get($map: $paleta, $key: 'tres');
     height: 100vh;
     width: 100%;
@@ -535,7 +535,7 @@ p {
         .errorReturn {
             margin-top: 10rem;
             text-align: center;
-            @include flex(column, center, center, auto);
+            @include flex(column, center, center, nowrap);
             width: 100%;
             h2 {
                 color: white;
@@ -544,7 +544,7 @@ p {
             }
 
             a {
-                @include flex(auto, center, center, auto);
+                @include flex(row, center, center, nowrap);
                 border-radius: 10px;
                 width: 140px;
                 height: 30px;
