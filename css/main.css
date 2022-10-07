@@ -442,6 +442,78 @@ p {
   padding: 10px 0;
 }
 
+.errorBody {
+  display: flex;
+  flex-direction: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: auto;
+  background-color: #270d00;
+  height: 100vh;
+  width: 100%;
+}
+.errorBody header .errorTitle h1, .errorBody header .errorTitle h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #3f1400;
+  text-transform: uppercase;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(253, 72, 0, 0.2));
+  line-height: 0.8em;
+  letter-spacing: 16px;
+  -webkit-animation: anim 5s linear infinite;
+          animation: anim 5s linear infinite;
+  outline: none;
+}
+@-webkit-keyframes anim {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #3f1400;
+    text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: white;
+    text-shadow: 0 0 10px #F55000, 0 0 20px #F55000, 0 0 40px #F55000, 0 0 80px #F55000, 0 0 160px #F55000;
+  }
+}
+@keyframes anim {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: #3f1400;
+    text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: white;
+    text-shadow: 0 0 10px #F55000, 0 0 20px #F55000, 0 0 40px #F55000, 0 0 80px #F55000, 0 0 160px #F55000;
+  }
+}
+.errorBody header .errorReturn {
+  margin-top: 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: auto;
+  width: 100%;
+}
+.errorBody header .errorReturn h2 {
+  color: white;
+  opacity: 0.3;
+  margin-bottom: 10rem;
+}
+.errorBody header .errorReturn a {
+  display: flex;
+  flex-direction: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: auto;
+  border-radius: 10px;
+  width: 140px;
+  height: 30px;
+  font-size: 18px;
+  -webkit-animation: anim 5s linear infinite;
+          animation: anim 5s linear infinite;
+}
+
 #nav {
   grid-area: nav;
 }
