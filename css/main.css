@@ -558,7 +558,7 @@ p {
     transition: color 0.2s, transform 0.2s;
     color: #ffffff;
     background-color: #F55000;
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
   .news .card:hover .card-footer {
     background-color: white;
