@@ -555,10 +555,13 @@ p {
     width: 100%;
   }
   .news .card:hover {
-    transition: color 0.2s, transform 0.5s;
+    transition: color 0.2s, transform 0.2s;
     color: #ffffff;
     background-color: #F55000;
     transform: scale(1.05);
+  }
+  .news .card:hover .card-footer {
+    background-color: white;
   }
   .branch {
     display: flex;
