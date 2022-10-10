@@ -510,7 +510,7 @@ p {
                         color: map-get($map: $paleta, $key: 'dos');
                         text-shadow: none;
                     }
-    
+
                     18.1%,
                     20.1%,
                     30%,
@@ -537,6 +537,7 @@ p {
             text-align: center;
             @include flex(column, center, center, nowrap);
             width: 100%;
+
             h2 {
                 color: white;
                 opacity: .3;
