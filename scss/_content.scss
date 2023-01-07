@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: $primaryFont;
+    border: 1px solid black;
 }
 
 html {
@@ -102,6 +103,12 @@ p {
     overflow: hidden;
 }
 
+.header-work-with-us {
+    background-image: url(../img/header-trabaja-con-nosotros.webp);
+    background-size: cover;
+    background-position: center;
+}
+
 .header--margin {
     margin-bottom: 6rem;
     min-height: 42rem;
@@ -196,6 +203,12 @@ p {
 }
 
 // Quiénes somos
+
+.header-quienes-somos {
+    background-image: url(../img/header-quienes-somos.webp);
+    background-position: center;
+    background-size: cover;
+}
 
 .who-we-are {
     p {
@@ -295,10 +308,12 @@ p {
             opacity: 0.8;
             background-color: map-get($map: $paleta, $key: 'uno');
             margin-top: 1rem;
+            transition: 0.2s;
 
             &:hover {
-                transition: 0.2s;
-                transform: scale(1.3);
+                color: #f55000;
+                background-color: #fff;
+                border: 1px solid #f55000;
                 opacity: 1;
             }
         }
@@ -343,10 +358,12 @@ p {
     background-color: map-get($map: $paleta, $key: 'uno');
     margin-top: 1rem;
     width: 20rem;
+    transition: 0.2s;
 
     &:hover {
-        transition: 0.2s;
-        transform: scale(1.2);
+        color: #f55000;
+        background-color: #fff;
+        border: 1px solid #f55000;
         opacity: 1;
     }
 }
@@ -382,12 +399,33 @@ p {
     text-align: center;
 
     form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         input {
             background-color: map-get($map: $paleta, $key: 'white');
+            border: none;
+            border-radius: 10px;
             text-align: center;
             font-weight: $textBold;
             width: 25rem;
-            height: 3rem;
+            height: 4rem;
+
+            &::placeholder {
+                font-size: 1.5rem;
+                color: #0000009c
+            }
+        }
+
+        button {
+            color: #0000009c;
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            width: 120px;
+            font-weight: $textBold;
         }
     }
 }
@@ -395,6 +433,7 @@ p {
 .newsletter__title {
     font-size: $subtitle2Size;
     color: map-get($map: $paleta, $key: 'white');
+    margin-bottom: 2rem;
 }
 
 // Pie de página
