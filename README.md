@@ -6,6 +6,8 @@
 
 It is the first complete website i made, a law firm.
 It's a final proyect for a web development course i did.
+It has forms, carrousels, animations...
+A very cao
 
 
 ## What did I do?
