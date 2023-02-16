@@ -9,7 +9,7 @@ It's a final proyect for a web development course i did.
 It has forms, carrousels, animations... very complete, i learned a lot
 
 
-## What did I do?
+## How I made it
 
 - At first i had to make it with only html and css
 - Later, redesign it using Sass, Bootstrap (library) and Animate.css (library)
