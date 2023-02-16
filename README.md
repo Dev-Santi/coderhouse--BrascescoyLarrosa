@@ -1,4 +1,4 @@
-# Welcome Brascesco & Larrosa!
+# Welcome to Brascesco & Larrosa!
 
 ![Screenshot of the page](./img/screen.png)
 
