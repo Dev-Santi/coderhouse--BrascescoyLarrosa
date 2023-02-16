@@ -1,6 +1,6 @@
 # Welcome Brascesco & Larrosa!
 
-![Screenshot of the page](./assets/screen.png)
+![Screenshot of the page](./img/screen.png)
 
 ## About this proyect
 
